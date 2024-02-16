@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Экономика и бухгалтерский учёт{% endblock title %}
+
+{% block content %}
+
+<main role="main" class="container">
+    <h1 class="text-center mt-5">Экономика и бухгалтерский учёт</h1>
+    <div class="row my-4">
+        <div class="col-md-6 m-auto">
+            <p class="text-justify">Специалисты по экономике занимаются анализом рыночных процессов, экономическим планированием, прогнозированием экономических показателей, исследованием спроса и предложения. Они изучают эффективность использования ресурсов, влияние различных факторов на экономику, разрабатывают стратегии развития компаний и рынков.</p>
+            <p class="text-justify">Специалисты по бухгалтерскому учету отвечают за ведение учета финансовых операций организации. Они составляют финансовые отчеты, контролируют финансовые потоки, анализируют финансовую отчетность, отслеживают налоговую отчетность. Важная часть их работы - обеспечение соблюдения финансовых стандартов и законодательства.</p>
+        </div>
+        <div class="col-md-6">
+            <a href="{% static 'images\economics_accounting\economics_accounting1.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img class="img-fluid rounded"
+                     src="{% static 'images\economics_accounting\economics_accounting1.jpg' %}"
+                     alt="Экономика и бухгалтерский учёт"
+                     title="Экономика и бухгалтерский учёт">
+            </a>
+        </div>
+    </div>
+    <h2 class="display-4 text-center my-5">Карьерные возможности в различных отраслях</h2>
+    <h3 class="text-center">Бухгалтерия и финансы</h3>
+    <div class="row d-flex justify-content-around my-3">
+        <div class="col-md-2 bg-info text-white font-weight-bold p-3 text-center">Бухгалтер</div>
+        <div class="col-md-2 bg-primary text-white font-weight-bold p-3 text-center">Финансовый аналитик</div>
+        <div class="col-md-2 bg-success text-white font-weight-bold p-3 text-center">Кредитный аналитик</div>
+        <div class="col-md-2 bg-danger text-white font-weight-bold p-3 text-center">Финансовый контролер</div>
+        <div class="col-md-2 bg-warning text-white font-weight-bold p-3 text-center">Налоговый специалист</div>
+    </div>
+    <hr class="lead">
+    <h3 class="text-center">Консалтинг</h3>
+    <div class="row d-flex justify-content-around my-3">
+        <div class="col-md-2 bg-danger text-white font-weight-bold p-3 text-center">Аудитор</div>
+        <div class="col-md-2 bg-primary text-white font-weight-bold p-3 text-center">Налоговый консультант</div>
+        <div class="col-md-2 bg-success text-white font-weight-bold p-3 text-center">Экономический консультант</div>
+        <div class="col-md-2 bg-info text-white font-weight-bold p-3 text-center">Финансовый консультант</div>
+    </div>
+    <hr class="lead">
+    <h3 class="text-center">Управление и администрирование</h3>
+    <div class="row d-flex justify-content-around my-3">
+        <div class="col-md-2 bg-danger text-white font-weight-bold p-3 text-center">Финансовый менеджер</div>
+        <div class="col-md-2 bg-primary text-white font-weight-bold p-3 text-center">Управляющий по финансам</div>
+        <div class="col-md-2 bg-success text-white font-weight-bold p-3 text-center">Контроллинг-менеджер</div>
+        <div class="col-md-2 bg-info text-white font-weight-bold p-3 text-center">Финансовый директор</div>
+    </div>
+    <div class="alert alert-success my-5" role="alert">
+        Это лишь небольшая часть возможных карьерных путей для специалистов по экономике и бухгалтерскому учету. Благодаря их ключевой роли в управлении финансами и анализе данных, данные специальности предоставляют широкие возможности для карьерного роста и развития в различных отраслях.
+    </div>
+</main>
+
+{% endblock content %}

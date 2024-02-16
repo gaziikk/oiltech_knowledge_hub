@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Геофизические методы поисков и разведки месторождений полезных ископаемых{% endblock title %}
+
+{% block content %}
+<main role="main" class="container">
+    <div class="jumbotron">
+        <h1 class="h1">Геофизические методы поисков и разведки месторождений полезных ископаемых</h1>
+        <p class="lead text-justify">Геофизические методы играют ключевую роль в поиске и разведке месторождений полезных ископаемых, таких как нефть и газ. Они помогают определить структуру и состав горных пород под землей, что обеспечивает основу для принятия решений о дальнейших шагах в процессе разработки.</p>
+        <hr class="my-4">
+        <p class="text-justify">Здесь вы найдете информацию о методах геофизики, применяемых в нефтегазовой промышленности, и их роли в поиске и оценке месторождений.</p>
+    </div>
+    <div class="row">
+        <!-- Дополнительные сведения о специальности -->
+        <div class="col-md-8">
+            <h2>Описание специальности</h2>
+            <p class="text-justify">Геофизические методы поиска и разведки месторождений полезных ископаемых включают в себя различные техники и технологии, такие как сейсмическое обследование, гравиметрия, магнитометрия, электромагнитные методы и другие. Эти методы помогают определить структуру и свойства подземных образований и выявить потенциальные месторождения нефти, газа и других полезных ископаемых.</p>
+            <h2>Список геофизических методов:</h2>
+            <ol>
+                <li>Сейсмическое обследование</li>
+                <li>Гравиметрия</li>
+                <li>Магнитометрия</li>
+                <li>Электромагнитные методы</li>
+                <li>Георадарная съемка</li>
+                <li>Геоэлектрическая съемка</li>
+                <li>Радиометрическое обследование</li>
+            </ol>
+        </div>
+        <div class="col-md-4">
+            <h2>Виды работы и перспективы</h2>
+            <p class="text-justify">Специалисты по геофизическим методам поиска и разведки месторождений работают как в области исследований, так и на месторождениях, где проводят полевые и лабораторные работы. Они могут заниматься обработкой и анализом данных, интерпретацией результатов и разработкой стратегий поиска и разведки. Специалисты в этой области востребованы в различных секторах нефтегазовой промышленности и имеют хорошие перспективы карьерного роста.</p>
+            <h2>Виды работы:</h2>
+            <ul>
+                <li>Полевые исследования</li>
+                <li>Лабораторные анализы</li>
+                <li>Обработка данных</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mt-2 mb-2">
+                <a href="{% static 'images/geophysical_exploration/geophysical_method1.jpg' %}" target="_blank" rel="noopener noreferrer">
+                    <img class="img-fluid rounded" src="{% static 'images/geophysical_exploration/geophysical_method1.jpg' %}" alt="Поиск и разведка месторождений полезных ископаемых" title="Поиск и разведка месторождений полезных ископаемых">
+                </a>
+            </div>
+            <div class="col-md-4 mt-2 mb-2">
+                <a href="{% static 'images/geophysical_exploration/geophysical_method2.jpg' %}" target="_blank" rel="noopener noreferrer">
+                    <img class="img-fluid rounded" src="{% static 'images/geophysical_exploration/geophysical_method2.jpg' %}" alt="Поиск и разведка месторождений полезных ископаемых" title="Поиск и разведка месторождений полезных ископаемых">
+                </a>
+            </div>
+            <div class="col-md-4 mt-2 mb-2">
+                <a href="{% static 'images/geophysical_exploration/geophysical_method3.jpg' %}" target="_blank" rel="noopener noreferrer">
+                    <img class="img-fluid rounded" src="{% static 'images/geophysical_exploration/geophysical_method3.jpg' %}" alt="Поиск и разведка месторождений полезных ископаемых" title="Поиск и разведка месторождений полезных ископаемых">
+                </a>
+            </div>
+        </div>
+        
+        
+        <!-- Вопрос и ответы на них в виде аккордеона -->
+        <div id="accordion" class="mb-5 mt-5">
+            <h2 class="display-4 text-center">Ответы на интересующие вопросы</h2><br>
+            <!-- Вопрос 1 -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Какие геофизические методы наиболее эффективны при поиске новых месторождений полезных ископаемых?
+                        </button>
+                    </h5>
+                </div>
+        
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body text-justify">
+                        Наиболее эффективные геофизические методы при поиске новых месторождений полезных ископаемых включают сейсморазведку, гравиметрию, магнитометрию и электромагнитные методы. Каждый из них обладает уникальными преимуществами и применяется в зависимости от геологических условий и типа искомых ресурсов.
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Вопрос 2 -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Какие технологии и оборудование используются для проведения геофизических изысканий?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body text-justify">
+                        Для проведения геофизических изысканий используются различные технологии и оборудование, такие как сейсмические исследования с помощью сейсмических приборов и геофонов, гравиметрические измерения с помощью гравиметров, магнитометрические методы с использованием магнитометров, электромагнитные методы с применением электромагнитных инструментов, радиометрические методы и другие.
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Вопрос 3 -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Какую роль играют гравиметрия, сейсморазведка и электромагнитные методы в поиске и разведке месторождений полезных ископаемых?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body text-justify">
+                        Гравиметрия позволяет измерять изменения в гравитационном поле Земли, что помогает выявить аномалии, связанные с подземными структурами. Сейсморазведка использует звуковые волны для изучения структуры глубоких слоев Земли и обнаружения месторождений. Электромагнитные методы помогают определить электрические свойства горных пород, что полезно при поиске полезных ископаемых.
+                    </div>
+                </div>
+            </div>
+            <!-- Вопрос 4 -->
+            <div class="card">
+                <div class="card-header" id="headingFour" >
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Какие трудности и вызовы возникают при интерпретации геофизических данных, и как они преодолеваются?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body text-justify">
+                        Трудности при интерпретации геофизических данных включают в себя сложности с различением между различными типами горных пород, артефактами, возникающими в процессе измерений, и интерпретацией слабых сигналов. Эти проблемы преодолеваются путем использования современных методов обработки данных, математических моделей и компьютерных алгоритмов.
+                    </div>
+                </div>
+            </div>
+            <!-- Вопрос 5 -->
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Какие новые технологии и инновации сейчас разрабатываются или используются?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body text-justify">
+                        В области геофизики поиска месторождений полезных ископаемых разрабатываются новые технологии, такие как применение искусственного интеллекта и машинного обучения для анализа данных, использование беспилотных летательных аппаратов (дrones) для сбора информации, а также развитие высокоточных геофизических инструментов и сенсоров. Эти инновации направлены на повышение эффективности и точности поиска месторождений и улучшение процесса разведки.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Видео -->
+    <!-- <div class="embed-responsive embed-responsive-16by9 mt-5">
+        <p>Тут если что видео должно быть по центру и с внутренними отступами</p>
+        <iframe class="embed-responsive-item" src="https://youtube.com/watch?v=dU6xZwpOK2I" allowfullscreen></iframe>
+    </div> -->
+</main>
+
+
+{% endblock content %}

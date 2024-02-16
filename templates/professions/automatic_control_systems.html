@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Автоматические системы управления{% endblock title %}
+
+{% block content %}
+
+
+<main role="main" class="container">
+    <div class="jumbotron p-4 p-md-5 mt-5 text-white rounded bg-dark row">
+        <div class="col-md-7 px-0">
+            <h1 class="h1 font-weight-normal">Автоматические системы управления</h1>
+            <p class="lead my-3 text-justify">Специалисты в данной области занимаются проектированием, разработкой и оптимизацией систем управления для различных устройств и процессов. Они тестируют и отлаживают эти системы, исследуют новые методы и технологии в области управления, работают с реальными устройствами и системами, а также могут заниматься обучением и консультированием в этой области.</p>
+        </div>
+        <div class="col-md-5 m-auto ">
+            <a href="{% static 'images\automatic_control_systems\automatic_control_systems1.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img class="img-fluid rounded"
+                     src="{% static 'images\automatic_control_systems\automatic_control_systems1.jpg' %}"
+                     alt="Автоматические системы управления"
+                     title="Автоматические системы управления">
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center">Увлекательные факты</h2>
+            <ul class="text-justify list-group my-3">
+                <li class="list-group-item">В автоматических системах управления особенно важно правильно настроить обратную связь. Обратная связь - это механизм, возвращающий часть выходного сигнала обратно к входу системы для регулировки работы. Настройка этого элемента имеет ключевое значение для стабильной и эффективной работы системы.</li>
+                <li class="list-group-item">PID-регуляторы (пропорционально-интегрально-дифференциальные) являются одним из основных инструментов управления в автоматических системах. Они позволяют учитывать текущее состояние системы, ее историю и предсказывать будущее поведение для коррекции ошибок.</li>
+                <li class="list-group-item">Теория управления играет огромную роль в разработке автоматических систем. Она включает в себя такие концепции, как устойчивость системы, оптимальное управление, теория обратной связи и многое другое. Знание и применение этих теоретических основ помогают создавать эффективные и точные системы управления.</li>
+                <li class="list-group-item">Автоматические системы управления используются в самых разнообразных областях: от робототехники и авиации до производства и энергетики. Эти системы играют ключевую роль в автоматизации процессов, улучшении качества продукции и повышении эффективности работы различных устройств.</li>
+                <li class="list-group-item">Сфера автоматических систем управления постоянно развивается. С появлением новых технологий, таких как искусственный интеллект, машинное обучение и Интернет вещей, специалисты в этой области постоянно сталкиваются с вызовами и новыми возможностями для улучшения систем управления.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-4 text-center mb-5">
+            <a href="{% static 'images\automatic_control_systems\automatic_control_systems2.jpeg' %}" target="_blank" rel="noopener noreferrer">
+                <img class="bd-placeholder-img rounded-circle img-thumbnail"
+                     src="{% static 'images\automatic_control_systems\automatic_control_systems2.jpeg' %}"
+                     style="width: 250px;height: 250px;"
+                     alt="Совет начинающим специалистам 1"
+                     title="Совет начинающим специалистам 1">
+            </a>
+            <h2>Углубляйтесь в теорию и практику</h2>
+            <p class="text-justify">Понимание основных принципов теории управления, математических моделей систем, алгоритмов регулирования и методов оптимизации является ключевым для успешной работы. Разбирайтесь в PID-регуляторах, методах обратной связи и других основах управления.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="{% static 'images\automatic_control_systems\automatic_control_systems3.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img class="bd-placeholder-img rounded-circle img-thumbnail"
+                    src="{% static 'images\automatic_control_systems\automatic_control_systems3.jpg' %}"
+                    style="width: 250px;height: 250px;"
+                    alt="Совет начинающим специалистам 2"
+                    title="Совет начинающим специалистам 2">
+            </a>
+            <h2 class="mb-5">Экспериментируйте</h2>
+            <p class="text-justify">Неувядаемое желание экспериментировать с реальными устройствами и системами поможет вам лучше понять принципы работы автоматических систем управления. Практический опыт часто дает больше знаний, чем теоретический материал.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="{% static 'images\automatic_control_systems\automatic_control_systems4.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img class="bd-placeholder-img rounded-circle img-thumbnail"
+                     src="{% static 'images\automatic_control_systems\automatic_control_systems4.jpg' %}"
+                     style="width: 250px;height: 250px;"
+                     alt="Совет начинающим специалистам 3"
+                     title="Совет начинающим специалистам 3">
+            </a>
+            <h2>Следите за развитием технологий</h2>
+            <p class="text-justify">Будьте в курсе последних тенденций в области автоматических систем управления, изучайте новые методы и технологии. Участвуйте в профессиональных сообществах, форумах или конференциях, где можно обмениваться опытом и учиться у других специалистов.</p>
+        </div>
+    </div>
+
+</main>
+
+{% endblock content %}

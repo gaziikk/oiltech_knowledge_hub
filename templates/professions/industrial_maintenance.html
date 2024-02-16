@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Монтаж техническое обслуживание и ремонт промышленного оборудования{% endblock title %}
+
+{% block content %}
+<main role="main" class="container">
+    <h1 class="text-center mt-5">Монтаж, техническое обслуживание и ремонт промышленного оборудования</h1>
+
+    <div class="row">
+        <div class="col-md-6 text-justify">
+            <p>Данная специальность работу с различными видами промышленного оборудования, используемого в производственных предприятиях, заводах и других промышленных объектах.</p>
+            <p>Советы для начинающих сервис-инженеров:</p>
+            <ul>
+                <li>Всегда используйте средства защиты, такие как перчатки, очки и защитная одежда.</li>
+                <li>Тщательно изучите электрические схемы и принципы работы оборудования, с которым вы работаете.</li>
+                <li>При работе с электричеством всегда отключайте питание и используйте инструменты с изолированными ручками.</li>
+                <li>Обращайте внимание на безопасность не только себя, но и окружающих. Не допускайте неподготовленных людей к работе с электричеством.</li>
+            </ul>
+        </div>
+        <div class="col-md-6 m-auto">
+            <a href="{% static 'images/industrial_maintenance/industrial_maintenance1.jpg' %}" target="_blank" rel="noopener noreferrer">
+            <img src="{% static 'images/industrial_maintenance/industrial_maintenance1.jpg' %}"
+                 alt="Промышленное оборудование"
+                 class="img-fluid"
+                 title="Промышленное оборудование">
+            </a>
+        </div>
+    </div>
+
+    <h2 class="text-center my-3">Примеры оборудования</h2>
+    <div class="row mb-5">
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="{% static 'images/industrial_maintenance/industrial_maintenance2.jpg' %}" class="img-fluid card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Частотные преобразователи ABB ACS880</h5>
+                    <p class="card-text">Высокотехнологичные частотные преобразователи для управления скоростью приводов электродвигателей в различных промышленных приложениях.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="{% static 'images/industrial_maintenance/industrial_maintenance3.jpg' %}" class="img-fluid card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Промышленные насосы Grundfos CR</h5>
+                    <p class="card-text">Высокоэффективные насосы для перекачивания воды и других жидкостей в промышленных системах холодильного оборудования, водоснабжения и др.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="{% static 'images/industrial_maintenance/industrial_maintenance4.jpg' %}" class="img-fluid card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Промышленный инверторный сварочный аппарат Fronius TransSteel</h5>
+                    <p class="card-text">Современные сварочные аппараты для ручной дуговой сварки различных металлических материалов в промышленных условиях.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock content %}

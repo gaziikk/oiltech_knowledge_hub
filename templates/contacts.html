@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Контакты{% endblock title %}
+{% block extra_head %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+{% endblock extra_head %}
+{% block content %}
+
+<main role="main" class="container">
+	<!-- <h1 class="text-center mt-3">Контакты</h1> -->
+	<div class="row my-5">
+		<div class="col-md-7">
+			<h2 class="text-center">Обо мне</h2>
+			<p class="lead text-justify">Здравствуйте! Меня зовут Данил. Мне 18 лет. Моя история в программировании началась с изучения C++. Я освоил основы языка, но потом забросил его. Позже, я решил погрузиться в C#, где провел довольно продолжительное время, разрабатывая игры на платформе Unity. Однако, со временем игры немного потеряли свой интерес для меня, и я решил перейти на Python.</p>
+			<p class="lead text-justify">Моё хобби – игра на гитаре. Уже в течение года я в свободное время играю на гитаре и наслаждаюсь каждой минутой.</p>
+			<p class="lead text-justify">Сейчас я – начинающий разработчик, который интересуется как фронтендом, так и бэкендом. На фронтенде я использую HTML, CSS (с использованием Bootstrap), стремясь создавать интересные и красивые пользовательские интерфейсы. На бэкенде я использую Python для создания веб-приложений и веб-сервисов.</p>
+			<p class="lead text-justify">Я учусь в техникуме на третьем курсе по специальности "Информационные системы и программирование". Моя цель - продолжать углублять свои знания в программировании, расширять навыки как фронтенд и бэкенд разработчика, и создавать интересные проекты, которые могут быть полезными для людей.</p>
+			<div class="row m-1 d-flex justify-content-around">
+				<div class="contact-section">
+					<a title="ВКонтакте" href="https://vk.com/gaziikk" target="_blank">
+						<i class="fab fa-vk fa-4x"></i>
+					</a>
+				</div>
+				<div class="contact-section">
+					<a title="Email" href="mailto:danil.gazizullin0@gmail.com" target="_blank">
+						<i class="far fa-envelope fa-4x"></i>
+					</a>
+				</div>
+				<div class="contact-section">
+					<a title="Telegram" href="https://t.me/gaziikk" target="_blank">
+						<i class="fab fa-telegram fa-4x"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-5">
+			<h2 class="text-center">Задать вопрос</h2>
+			<form action="" method="post">
+				{% csrf_token %}
+				<div class="mb-3">
+					<label class="form-label" for="{{ form.full_name.id_for_label }}">{{ form.full_name.label }}</label>
+					<input class="form-control form-control-lg" type="text" name="full_name" id="inputName" placeholder="Иванов Иван Иванович">
+				</div>
+				<div class="mb-3">
+					<label class="form-label" for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
+					<input class="form-control form-control-lg" type="email" name="email" id="inputEmail" placeholder="example@mail.com">
+				</div>
+				<div class="mb-3">
+					<label class="form-label" for="{{ form.answer.id_for_label }}">{{form.answer.label}}</label>
+					<textarea style="resize: none" rows="5" class="form-control form-control-lg" name="answer" id="inputAnswer" placeholder="Задайте свой вопрос здесь"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Отправить</button>
+			</form>
+		</div>
+	</div>
+</main>
+{% endblock content %}

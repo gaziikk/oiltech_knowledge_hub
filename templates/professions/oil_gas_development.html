@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Разработка и эксплуатация нефтяных и газовых месторождений{% endblock title %}
+
+{% block content %}
+<main class="container">
+    <div class="jumbotron p-4 p-md-5 mt-5 text-white rounded bg-dark row">
+        <div class="col-md-8 px-0">
+            <h1 class="h1 font-weight-normal">Разработка и эксплуатация нефтяных и газовых месторождений</h1>
+            <p class="lead my-3 text-justify mr-3">Специалисты в этой области играют важную роль в энергетической индустрии, обеспечивая постоянное снабжение общества энергией и являясь двигателем технологического прогресса в отрасли.</p>
+        </div>
+        <div class="col-md-4 m-auto">
+            <a href="{% static 'images/oil_gas_development/oil_gas_development.png' %}" target="_blank" rel="noopener noreferrer">
+                <img class="img-fluid rounded" src="{% static 'images/oil_gas_development/oil_gas_development.png' %}" alt="Разработка и эксплуатация нефтяных и газовых месторождений" title="Разработка и эксплуатация нефтяных и газовых месторождений">
+            </a>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">Достижение</strong>
+                    <h3 class="mb-0">Гидравлический разрыв </h3>
+                    <p class="card-text mb-auto text-justify">Развитие технологии гидравлического разрыва позволило значительно увеличить добычу сланцевых нефтегазовых месторождений. Эта инновация привела к революции в нефтегазовой промышленности, открывая новые возможности для добычи ресурсов.</p>
+                    <a href="https://neftegaz.ru/tech-library/tekhnologii/141812-gidravlicheskiy-razryv-plasta-grp/?ysclid=ls92i11ghj143922752" class="mt-2 text-decoration-none" target="_blank" title="Гидравлический разрыв" rel="noopener noreferrer">Читать подробнее..</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">Достижение</strong>
+                    <h3 class="mb-0">Инновации в геофизике</h3>
+                    <p class="card-text mb-auto text-justify">Применение современных геофизических методов и технологий обработки данных позволяет более точно определять структуру и характеристики месторождений, что способствует эффективной и экономически целесообразной разработке.</p>
+                    <a href="https://dzen.ru/a/ZcCc-NsrnECEu6F4" title="Инновации в геофизике" class="mt-2 text-decoration-none" target="_blank" rel="noopener noreferrer">Читать подробнее..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center mb-5">
+        <div class="col-md-4 my-3">
+            <h5>Оператор добычи нефти и газа</h5>
+            <a href="{% static 'images\oil_gas_development\oil_gas_development1.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img src="{% static 'images\oil_gas_development\oil_gas_development1.jpg' %}" alt="Оператор добычи нефти и газа" title="Оператор добычи нефти и газа" class="img-fluid rounded">
+            </a>
+        </div>
+        <div class="col-md-4 my-3">
+            <h5>Инженеры-нефтяники</h5>
+            <a href="{% static 'images\oil_gas_development\oil_gas_development2.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img src="{% static 'images\oil_gas_development\oil_gas_development2.jpg' %}" alt="Инженеры-нефтяники" title="Инженеры-нефтяники" class="img-fluid rounded">
+            </a>
+        </div>
+        <div class="col-md-4 my-3">
+            <h5>Нефтяная промышленность </h5>
+            <a href="{% static 'images\oil_gas_development\oil_gas_development3.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img src="{% static 'images\oil_gas_development\oil_gas_development3.jpg' %}" alt="Нефтяная промышленность" title="Нефтяная промышленность" class="img-fluid rounded">
+            </a>
+        </div>
+    </div>
+</main>
+{% endblock content %}

@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<main role="main" class="container">
+    <h1 class="text-center mt-3 mb-3">Перечень специальностей</h1>
+    <div class="row">
+
+        <!-- Геофизические методы поисков и разведки месторождений полезных ископаемых -->
+        <div class="col-md-4 d-flex h-auto">
+			<div class="card mb-4 shadow-sm h-auto d-flex">
+				<a href="{% url 'geophysical_exploration' %}" rel="noopener noreferrer">
+				<img src="{% static 'images/index_banners/geophysical_exploration.jpg' %}"
+				     class="card-img-top"
+					 alt="Геофизические методы поисков и разведки месторождений полезных ископаемых"
+					 title="Геофизические методы поисков и разведки месторождений полезных ископаемых"> 
+				</a>
+				<div class="card-body">
+					<h5 class="card-title">Геофизические методы поисков и разведки месторождений полезных ископаемых</h5>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Сооружение и эксплуатация газонефтепроводов и газонефтехранилищ -->
+		<div class="col-md-4 d-flex h-auto">
+			<div class="card mb-4 shadow-sm h-auto d-flex">
+				<a href="{% url 'pipeline_construction' %}" rel="noopener noreferrer">
+				<img src="{% static 'images/index_banners/pipeline_construction.jpg' %}"
+					 class="card-img-top"
+					 alt="Сооружение и эксплуатация газонефтепроводов и газонефтехранилищ"
+					 title="Сооружение и эксплуатация газонефтепроводов и газонефтехранилищ">
+				</a>
+				<div class="card-body">
+					<h5 class="card-title">Сооружение и эксплуатация газонефтепроводов и газонефтехранилищ</h5>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Разработка и эксплуатация нефтяных и газовых месторождений -->
+		<div class="col-md-4 d-flex h-auto">
+			<div class="card mb-4 shadow-sm h-auto d-flex">
+				<a href="{% url 'oil_gas_development' %}" rel="noopener noreferrer">
+				<img src="{% static 'images/index_banners/oil_gas_development.jpg' %}"
+					 class="card-img-top"
+					 alt="Разработка и эксплуатация нефтяных и газовых месторождений"
+					 title="Разработка и эксплуатация нефтяных и газовых месторождений">
+				</a>
+				<div class="card-body">
+					<h5 class="card-title">Разработка и эксплуатация нефтяных и газовых месторождений</h5>
+				</div>
+			</div>
+		</div>
+
+		<!-- Бурение нефтяных и газовых скважин -->
+		<div class="col-md-4">
+			<div class="card mb-4 shadow-sm h-auto d-flex">
+				<a href="{% url 'burial_drilling' %}" rel="noopener noreferrer">
+				<img src="{% static 'images/index_banners/burial_drilling.jpg' %}"
+				 	class="card-img-top"
+					alt="Бурение нефтяных и газовых скважин"
+					title="Бурение нефтяных и газовых скважин">
+				</a>
+				<div class="card-body">
+					<h5 class="card-title">Бурение нефтяных и газовых скважин</h5>
+				</div>
+			</div>
+		</div>
+
+		<!-- Геология и разведка нефтяных и газовых месторождений -->
+		<div class="col-md-4">
+			<div class="card mb-4 shadow-sm h-auto d-flex">
+				<a href="{% url 'geology_exploration' %}" rel="noopener noreferrer">
+				<img src="{% static 'images/index_banners/geology_exploration.jpg' %}"
+				 	class="card-img-top"
+					alt="Геология и разведка нефтяных и газовых месторождений"
+					title="Геология и разведка нефтяных и газовых месторождений">
+				</a>
+				<div class="card-body">
+					<h5 class="card-title">Геология и разведка нефтяных и газовых месторождений</h5>
+				</div>
+			</div>
+		</div>
+
+		<!-- Прикладная геодезия -->
+		<div class="col-md-4">
+			<div class="card mb-4 shadow-sm h-auto d-flex">
+				<a href="{% url 'applied_geodesy' %}" rel="noopener noreferrer">
+				<img src="{% static 'images/index_banners/applied_geodesy.jpg' %}"
+					 class="card-img-top"
+					 alt="Прикладная геодезия"
+					 title="Прикладная геодезия">
+				</a>
+				<div class="card-body">
+					<h5 class="card-title">Прикладная геодезия</h5>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<!-- Автоматические системы управления -->
+		<div class="col-md-4">
+			<div class="card mb-4 shadow-sm h-auto d-flex">
+				<a href="{% url 'automatic_control_systems' %}" rel="noopener noreferrer">
+				<img src="{% static 'images/index_banners/automatic_control_systems.jpg' %}"
+				 	class="card-img-top"
+					alt="Автоматические системы управления"
+					title="Автоматические системы управления">
+				</a>
+				<div class="card-body">
+					<h5 class="card-title">Автоматические системы управления</h5>
+				</div>
+			</div>
+		</div>
+
+		<!-- Экономика и бухгалтерский учёт -->
+		<div class="col-md-4">
+			<div class="card mb-4 shadow-sm h-auto d-flex">
+				<a href="{% url 'economics_accounting' %}" rel="noopener noreferrer">
+				<img src="{% static 'images/index_banners/economics_accounting.jpg' %}"
+				 	class="card-img-top"
+					alt="Экономика и бухгалтерский учёт"
+					title="Экономика и бухгалтерский учёт">
+				</a>
+				<div class="card-body">
+					<h5 class="card-title">Экономика и бухгалтерский учёт</h5>
+				</div>
+			</div>
+		</div>
+
+		<!-- Информационные системы и программирование -->
+		<div class="col-md-4">
+			<div class="card mb-4 shadow-sm h-auto d-flex">
+				<a href="{% url 'info_sys_programming' %}" rel="noopener noreferrer">
+				<img src="{% static 'images/index_banners/info_sys_programming.jpg' %}"
+				 	class="card-img-top"
+					alt="Информационные системы и программирование"
+					title="Информационные системы и программирование">
+				</a>
+				<div class="card-body">
+					<h5 class="card-title">Информационные системы и программирование</h5>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<!-- Техническая эксплуатация и обслуживание электрического и электромеханического оборудования -->
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm h-auto d-flex">
+					<a href="{% url 'electro_maintenance' %}" rel="noopener noreferrer">
+					<img src="{% static 'images/index_banners/electro_maintenance.jpg' %}"
+						class="card-img-top"
+					 	alt="Техническая эксплуатация и обслуживание электрического и электромеханического оборудования"
+						title="Техническая эксплуатация и обслуживание электрического и электромеханического оборудования">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Техническая эксплуатация и обслуживание электрического и электромеханического оборудования</h5>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Монтаж техническое обслуживание и ремонт промышленного оборудования -->
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm h-auto d-flex">
+					<a href="{% url 'industrial_maintenance' %}" rel="noopener noreferrer">
+					<img src="{% static 'images/index_banners/industrial_maintenance.png' %}"
+					 	class="card-img-top"
+						alt="Монтаж, техническое обслуживание и ремонт промышленного оборудования"
+						title="Монтаж, техническое обслуживание и ремонт промышленного оборудования">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Монтаж, техническое обслуживание и ремонт промышленного оборудования</h5><br>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</main>
+{% endblock content %}

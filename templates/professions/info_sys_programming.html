@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Информационные системы и программирование{% endblock title %}
+
+{% block content %}
+
+<main role="main" class="container">
+    <div class="row mt-5">
+        <div class="col-md-8 text-justify">
+            <h2>О специальности</h2>
+            <p>Специальность «Информационные системы и программирование» предназначена для обучения студентов основам разработки программного обеспечения, проектирования информационных систем и баз данных, а также их администрирования.</p>
+            <p>Студенты изучают такие дисциплины, как программирование на различных языках программирования, базы данных, веб-технологии, алгоритмы и структуры данных, системный анализ и дизайн, управление проектами и другие.</p>
+            <p>После завершения обучения выпускники специальности могут работать в качестве программистов, системных аналитиков, баз данных администраторов, веб-разработчиков и других IT-специалистов.</p>
+            <h3>Преимущества специальности:</h3>
+            <ul>
+            <li>Широкие возможности трудоустройства в IT-отрасли.</li>
+            <li>Актуальные знания и навыки в области программирования и информационных технологий.</li>
+            <li>Возможность развития и карьерного роста в сфере IT.</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <a href="{% static 'images/info_sys_programming/info_sys_programming1.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img src="{% static 'images/info_sys_programming/info_sys_programming1.jpg' %}" alt="Информационные системы и программирование" title="Информационные системы и программирование" class="img-fluid rounded my-4">
+            </a>
+            <h3>Почему выбирают нас?</h3>
+            <p class="text-justify">Программисты привлекаются возможностью творчества и высокими заработными платами. Востребованность в сфере информационных технологий обеспечивает хорошие перспективы карьерного роста. Гибкие графики и возможность удаленной работы также делают эту профессию привлекательной.</p>
+        </div>
+    </div>
+    <hr class="lead">
+    <h2 class="text-center text-info">Популярные языки программирования</h2>
+    <div class="container my-5 text-justify">
+        <div class="accordion" id="languagesAccordion">
+            <!-- Python -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0 text-center">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Python
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#languagesAccordion">
+              <div class="card-body">
+                Python - высокоуровневый язык программирования общего назначения, который широко применяется в веб-разработке, научных исследованиях, анализе данных, искусственном интеллекте и многих других областях.
+                <span class="badge badge-secondary"><a href="https://docs.python.org/3/index.html" class="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">Документация Python</a></span>
+              </div>
+            </div>
+          </div>
+          <!-- JavaScript -->
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0 text-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  JavaScript
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#languagesAccordion">
+              <div class="card-body">
+                JavaScript - язык программирования, который используется для создания интерактивных веб-сайтов и веб-приложений. Он также может быть использован для создания серверных приложений и мобильных приложений.
+                <span class="badge badge-secondary"><a href="https://js-documentation.netlify.app/" class="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">Документация JavaScript</a></span>
+              </div>
+            </div>
+          </div>
+        <!-- Java -->
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0 text-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Java
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#languagesAccordion">
+              <div class="card-body">
+                Java - универсальный язык программирования, который используется для разработки мобильных приложений, веб-приложений, корпоративных систем, игр и многих других приложений.
+                <span class="badge badge-secondary"><a href="https://docs.oracle.com/en/java/" class="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">Документация Java</a></span>
+              </div>
+            </div>
+          </div>
+          <!-- C++ -->
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0 text-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  C++
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#languagesAccordion">
+              <div class="card-body">
+                C++ - мощный язык программирования, который используется для создания высокопроизводительных приложений, операционных систем, игр, драйверов устройств и многих других систем.
+                <span class="badge badge-secondary"><a href="https://devdocs.io/cpp/" class="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">Документация C++</a></span>
+              </div>
+            </div>
+          </div>
+          <!-- C# -->
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0 text-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  C#
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#languagesAccordion">
+              <div class="card-body">
+                C# - объектно-ориентированный язык программирования, разработанный для создания приложений под платформу Microsoft.NET. Он используется для создания веб-приложений, игр, мобильных приложений и других приложений.
+                <span class="badge badge-secondary"><a href="https://learn.microsoft.com/ru-ru/dotnet/csharp/" class="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">Документация C#</a></span>
+              </div>
+            </div>
+          </div>
+          <!-- Swift -->
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h2 class="mb-0 text-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Swift
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#languagesAccordion">
+              <div class="card-body">
+                Swift - язык программирования, разработанный Apple для создания приложений под iOS, macOS, watchOS и tvOS. Он является безопасным, быстрым и выразительным языком программирования.
+                <span class="badge badge-secondary"><a href="https://www.swift.org/documentation/" class="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">Документация Swift</a></span>
+              </div>
+            </div>
+          </div>
+          <!-- Ruby -->
+          <div class="card">
+            <div class="card-header" id="headingSeven">
+              <h2 class="mb-0 text-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Ruby
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#languagesAccordion">
+              <div class="card-body">
+                Ruby - динамический, открытый язык программирования, который прост в использовании и понимании. Он часто используется для веб-разработки и создания прототипов.
+                <span class="badge badge-secondary"><a href="https://www.ruby-lang.org/ru/documentation/" class="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">Документация Ruby</a></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+</main>
+  
+{% endblock content %}

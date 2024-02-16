@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Геология и разведка нефтяных и газовых месторождений{% endblock title %}
+
+{% block content %}
+    
+<main role="main" class="container">
+    <h1 class="text-center mt-4">Геология и разведка нефтяных и газовых месторождений</h1>
+    <div class="row mt-5">
+        <div class="col-md-6 mb-3">
+            <h2>Происхождение нефти и газа</h2>
+            <p class="text-justify">Нефть и газ образуются из органических отложений, таких как водоросли и микроорганизмы, погребенных на больших глубинах под воздействием давления и температуры.</p><br>
+            <a href="{% static 'images\geology_exploration\geology_exploration1.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img class="img-fluid" src="{% static 'images\geology_exploration\geology_exploration1.jpg' %}" alt="Геология и разведка нефтяных и газовых месторождений" title="Происхождение нефти и газа">
+            </a>
+        </div>
+        <div class="col-md-6 mb-3">
+            <h2>Стратиграфия</h2>
+            <p class="text-justify">Геологи используют стратиграфию для изучения пород и идентификации месторождений нефти и газа. Они анализируют различные слои пород из разных эпох для определения их состава и характеристик.</p>
+            <a href="{% static 'images\geology_exploration\geology_exploration2.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img class="img-fluid" src="{% static 'images\geology_exploration\geology_exploration2.jpg' %}" alt="Геология и разведка нефтяных и газовых месторождений" title="Стратиграфия">
+            </a>
+        </div>
+        <div class="col-md-12 my-3">
+            <h1 class="text-center h1">Разведка нефтяных и газовых месторождений</h1>
+            
+        </div>
+        <div class="col-md-4 text-center mb-5">
+            <a href="{% static 'images/geology_exploration/geology_exploration3.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img class="bd-placeholder-img rounded-circle img-thumbnail" src="{% static 'images/geology_exploration/geology_exploration3.jpg' %}" style="width: 250px;height: 250px;" alt="Геофизические методы" title="Геофизические методы">
+            </a>
+            <h2>Геофизические методы</h2>
+            <p class="text-justify">Разведчики используют геофизические методы, такие как сейсмическая томография, для изучения геологической структуры недр и поиска потенциальных месторождений.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="{% static 'images/geology_exploration/geology_exploration4.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img class="bd-placeholder-img rounded-circle img-thumbnail" src="{% static 'images/geology_exploration/geology_exploration4.jpg' %}" style="width: 250px;height: 250px;" alt="Петрофизика" title="Петрофизика">
+            </a>
+            <h2 class="mb-5">Петрофизика</h2>
+            <p class="text-justify">Петрофизика позволяет определить физические свойства пород, такие как проницаемость и пористость, что важно для оценки запасов углеводородов</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="{% static 'images/geology_exploration/geology_exploration5.jpg' %}" target="_blank" rel="noopener noreferrer">
+                <img class="bd-placeholder-img rounded-circle img-thumbnail" src="{% static 'images/geology_exploration/geology_exploration5.jpg' %}" style="width: 250px;height: 250px;" alt="Геологоразведочное бурение" title="Геологоразведочное бурение">
+            </a>
+            <h2>Геологоразведочное бурение</h2>
+            <p class="text-justify">Это ключевой этап в разведке месторождений, где бурятся скважины для сбора образцов пород и проведения анализов на содержание нефти и газа</p>
+        </div>
+    </div>
+</main>
+
+
+{% endblock content %}

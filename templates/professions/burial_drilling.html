@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Бурение нефтяных и газовых скважин{% endblock title %}
+
+{% block content %}
+
+<main role="main" class="container">
+	<div class="row mt-5">
+		<div class="col-md-8">
+			<h1>Бурение нефтяных и газовых скважин</h1>
+			<p class="text-justify">В данном разделе можно найти обширную информацию о профессиональной деятельности в области бурения нефтяных и газовых скважин. Информация о технологических разработках, безопасности на месторождениях, экономических и экологических аспектах индустрии. Также, доступны советы по карьерному росту.</p>
+			<hr class="my-4">
+			<h2 class="text-center">Ценные советы</h2>
+			<ul class="text-justify">
+				<li>В современной индустрии бурения нефтяных и газовых скважин активно применяются инновационные технологии. Это включает в себя автоматизацию процессов, использование специализированных буровых установок, разработку новых буровых растворов и систем контроля процессов.</li>
+				<li>Бурение скважин - это не только технически сложный процесс, но и потенциально опасный. Соблюдение строгих мер безопасности и протоколов - ключевой аспект работы на любой буровой площадке. Все рабочие должны быть внимательны к своей безопасности и безопасности своих коллег.</li>
+				<li>Понимание геологических особенностей месторождений нефти и газа играет решающую роль в успешном бурении скважин. Это включает в себя анализ геологических данных, строение грунтов, и распределение пород в земной коре.</li>
+				<li>Работа на нефтяных и газовых месторождениях нередко связана с воздействием на окружающую среду. Важно соблюдать все стандарты и нормативы, минимизировать экологический след и активно применять технологии для обеспечения экологической безопасности.</li>
+				<li>Бурение скважин - это командный процесс, в котором каждый член бригады играет важную роль. Коммуникация, согласованность действий и умение работать в коллективе являются ключевыми качествами успешного бурового специалиста.</li>
+			</ul>
+			<hr class="my-4">
+			<!-- Вопрос и ответы на них в виде аккордеона -->
+			<div id="accordion">
+				<h2 class="display-5">Опыт старшего поколения</h2><br>
+				<!-- Вопрос 1 -->
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h5 class="mb-0">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Глубины бурения
+							</button>
+						</h5>
+					</div>
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						<div class="card-body text-justify">
+							На протяжении времени индустрия бурения нефтяных и газовых скважин постоянно развивалась, и специалисты сталкивались с бурением на все более значительных глубинах. Сегодня некоторые скважины бурятся на глубину нескольких километров, что требует особого оборудования и технических навыков.
+						</div>
+					</div>
+				</div>
+
+				<!-- Вопрос 2 -->
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Географические особенности
+							</button>
+						</h5>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+						<div class="card-body text-justify">
+							Каждое месторождение имеет свои уникальные геологические и географические особенности. Работа на различных месторождениях по всему миру представляет собой удивительную возможность изучать разнообразие природных условий и методов добычи.
+						</div>
+					</div>
+				</div>
+			
+				<!-- Вопрос 3 -->
+				<div class="card">
+					<div class="card-header" id="headingThree">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Инновации в оборудовании
+							</button>
+						</h5>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+						<div class="card-body text-justify">
+							Стремительное развитие технологий привело к появлению новых типов буровых установок, буровых инструментов и систем контроля процессов. Это позволяет улучшать производительность и эффективность бурения, а также снижать затраты на эксплуатацию.
+						</div>
+					</div>
+				</div>
+				<!-- Вопрос 4 -->
+				<div class="card">
+					<div class="card-header" id="headingFour" >
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								Нефтегазовая экономика
+							</button>
+						</h5>
+					</div>
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+						<div class="card-body text-justify">
+							Понимание экономических аспектов нефтегазовой промышленности является важным аспектом успешной работы в этой сфере. Стоимость добычи, цены на нефть и газ, политические и экономические факторы - все это оказывает влияние на стратегии разработки месторождений и бурения скважин.
+						</div>
+					</div>
+				</div>
+				<!-- Вопрос 5 -->
+				<div class="card">
+					<div class="card-header" id="headingFour" >
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+								Нефтегазовая экономика
+							</button>
+						</h5>
+					</div>
+					<div id="collapseFive" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+						<div class="card-body text-justify">
+							Забота о безопасности на буровых площадках стала более системной и комплексной. Внедрение новых стандартов, технологий и обучение персонала способствуют созданию более безопасных условий труда и снижению рисков производственных аварий.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 mb-5">
+			<div class="card my-3">
+				<a href="{% static 'images\burial_drilling\burial_drilling1.jpg' %}" target="_blank" rel="noopener noreferrer">
+					<img src="{% static 'images\burial_drilling\burial_drilling1.jpg' %}"
+					 	class="card-img-top"
+						alt="Бурение скважины"
+						title="Бурение скважины">
+				</a>
+				<div class="card-body">
+				  	<h5 class="card-title">Бурение скважины</h5>
+				  	<p class="card-text">Рабочие бурят скважину под бескрайним небом.
+					</p>
+				</div>
+			</div>
+			<div class="card my-3">
+				<a href="{% static 'images\burial_drilling\burial_drilling2.jpeg' %}" target="_blank" rel="noopener noreferrer">
+					<img src="{% static 'images\burial_drilling\burial_drilling2.jpeg' %}"
+						 class="card-img-top"
+						 alt="Командная работа"
+						 title="Командная работа">
+				</a>
+				<div class="card-body">
+				  	<h5 class="card-title">Командная работа</h5>
+				  	<p class="card-text">Мощные машины и сплоченная команда рабочих сражаются за доступ к энергетическим ресурсам, буря скважину в сердце природы.
+					<p>
+				</div>
+			</div>
+			<div class="card my-3">
+				<a href="{% static 'images\burial_drilling\burial_drilling3.jpg' %}" target="_blank" rel="noopener noreferrer">
+					<img src="{% static 'images\burial_drilling\burial_drilling3.jpg' %}"
+						 class="card-img-top"
+						 alt="Поток энергии"
+						 title="Поток энергии">
+				</a>
+				<div class="card-body">
+				  	<h5 class="card-title">Поток энергии</h5>
+				  	<p class="card-text">
+						Жидкость из глубин земли вырывается из трубы.
+					</p>
+				</div>
+			</div>			
+		</div>
+	</div>
+</main>
+
+{% endblock content %}
