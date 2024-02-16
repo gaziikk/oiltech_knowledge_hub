@@ -37,8 +37,8 @@
     > TOKEN – a token for working with a bot in telegram
 
     > TELEGRAM_ID – the unique ID in the telegram to which the messages will be sent
-
-   ### Where can I get a ```SECRET_KEY```?
+    ---
+    ### Where can I get a ```SECRET_KEY```?
     1. Open ```Python in the terminal```: ```python```
     2. Generate a new secret key:
 
@@ -47,7 +47,7 @@
         get_random_secret_key() 
         ```
     3. Django will give you a ```new secret key``` in the form of ```str```
-
+    ---
     ### Where can I get a ```PASSWORD```?
     + Open [Google Account Management](https://myaccount.google.com/).
     + Click **Security**
@@ -55,14 +55,13 @@
     + Scroll down and click on the **application passwords**
     + Select **create**
     + Click **done**
-
+    ---    
     ### Where can I get a ```TOKEN```?
     + Go to the **telegram**
     + **Search** [Bot Father Bot](https://t.me/BotFather)
     + Create a **new bot**, after the bot creation stage, the bot will send you a **token**
-
+    ---
     ### Where can I get a ```TELEGRAM_ID```?
     + Go to the **telegram**
     + **Search** [Get My ID Bot](https://t.me/getmyid_bot)
     + Write **/start** and get your telegram id
-
