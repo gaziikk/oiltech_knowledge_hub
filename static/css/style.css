@@ -1,0 +1,8 @@
+.navbar-custom {
+    background-color: #D48166;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link  {
+    color: #fff; /* Белый текст */
+}
