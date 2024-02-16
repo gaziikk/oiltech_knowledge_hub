@@ -39,14 +39,14 @@
     > TELEGRAM_ID – the unique ID in the telegram to which the messages will be sent
     ---
     ### Where can I get a ```SECRET_KEY```?
-    1. Open ```Python in the terminal```: ```python```
-    2. Generate a new secret key:
+    + Open ```Python in the terminal```: ```python```
+    + Generate a new secret key:
 
         ```python
         from django.core.management.utils import get_random_secret_key      
         get_random_secret_key() 
         ```
-    3. Django will give you a ```new secret key``` in the form of ```str```
+    + Django will give you a ```new secret key``` in the form of ```str```
     ---
     ### Where can I get a ```PASSWORD```?
     + Open [Google Account Management](https://myaccount.google.com/).
