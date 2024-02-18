@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ой-ой!</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="col-md-6 col-sm-12 text-center">
+                <a href="{% url 'index' %}"
+                   rel="noopener noreferrer"
+                   class="text-center btn btn-outline-primary">Главная</a>
+                <h3 class="alert alert-danger font-weight-light text-justify mt-2">
+                    Ой-ой! Кажется, вы забрели на территорию, которая скрыта от глаз посторонних. Вы, вероятно, не должны были сюда попасть. Пожалуйста, вернитесь туда, откуда пришли. Вам ещё рано знать о существовании этой страницы. Спасибо за понимание!
+                </h3>
+                <a href="https://github.com/gaziikk"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-outline-primary"
+                   >GitHub: gaziikk</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
