@@ -19,6 +19,8 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path
+from django.conf.urls import handler404
+
 
 from contacts.views import contacts
 from index.views import (
@@ -34,7 +36,7 @@ from index.views import (
     economics_accounting,
     geology_exploration,
     applied_geodesy,
-    about_site,
+    about_site
 )
 urlpatterns = [
     path('admin', admin.site.urls),
@@ -51,9 +53,9 @@ urlpatterns = [
     path('automatic_control_systems/', automatic_control_systems, name='automatic_control_systems'),
     path('economics_accounting/', economics_accounting, name='economics_accounting'),
     path('geology_exploration/', geology_exploration, name='geology_exploration'),
-    path('applied_geodesy/', applied_geodesy, name='applied_geodesy'),
+    path('applied_geodesy/', applied_geodesy, name='applied_geodesy')
 ]
-
+handler404 = 'index.views.custom_page_not_found'
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
