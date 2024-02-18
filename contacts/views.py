@@ -1,10 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from oiltech_knowledge_hub.forms import AddPostForm
 from django.core.mail import EmailMessage
 from os import getenv
 from aiogram import Bot, asyncio
 
-# Контакты
 def contacts(request):
     message_send = False
     
