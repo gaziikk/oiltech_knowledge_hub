@@ -79,10 +79,12 @@ The website of the knowledge base on petroleum technologies with ```the main pag
 
 ### Feedback form
 ---
-<div style="display: flex; align-items: center;">
-    <img src="./readme_assets/3.png" alt="Feedback form screenshot" style="width: 50%;">
-    <p style="text-align: justify; margin-left: 20; font-size: 1.3rem; font-weight: bold;">The user, having filled in the full name, mail and question, sends a message to e-mail and telegram</p>
-</div>
+<p align="center">
+    <img src="./readme_assets/3.png" alt="Feedback form screenshot" style="width: 70%;">
+</p>
+
+> **The user, having filled in the full name, mail and question, sends a message to e-mail and telegram**
+
 
 ---
 <img src="./readme_assets/4.png" alt="An email message screenshot" style="width: 100%;">
