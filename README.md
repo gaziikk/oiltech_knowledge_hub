@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/HTML-5-orange.svg?logo=html5">
 </h2>
 <p align="center">
-<img src="https://socialify.git.ci/gaziikk/oiltech_knowledge_hub/image?description=1&descriptionEditable=The%20website%20of%20the%20knowledge%20base%20on%20petroleum%20technologies%20with%20the%20main%20page%2C%20the%20description%20of%20the%20site%20and%20the%20contact%20information%20of%20me%20(the%20author)%2C%20including%20links%20to%20social%20networks%20and%20a%20feedback%20form.&font=Jost&name=1&owner=1&pattern=Brick%20Wall&theme=Light" alt="oiltech_knowledge_hub" width="640" height="320" />
+<img src="https://socialify.git.ci/gaziikk/oiltech_knowledge_hub/image?description=1&descriptionEditable=The%20website%20of%20the%20knowledge%20base%20on%20petroleum%20technologies%20with%20the%20main%20page%2C%20the%20description%20of%20the%20site%20and%20the%20contact%20information%20of%20me%20(the%20author)&font=Jost&name=1&owner=1&pattern=Brick%20Wall&theme=Light" alt="oiltech_knowledge_hub" width="640" height="320" />
 </p>
 
 
