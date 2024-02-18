@@ -3,6 +3,7 @@
 {% block title %}Контакты{% endblock title %}
 {% block extra_head %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 {% endblock extra_head %}
 {% block content %}
 
@@ -35,23 +36,51 @@
 		</div>
 		<div class="col-md-5">
 			<h2 class="text-center">Задать вопрос</h2>
+			{% if message_send %}
+				<div class="alert alert-success" role="alert">
+					Форма успешно отправлена!
+				</div>
+			{% endif %}
 			<form action="" method="post">
 				{% csrf_token %}
 				<div class="mb-3">
 					<label class="form-label" for="{{ form.full_name.id_for_label }}">{{ form.full_name.label }}</label>
-					<input class="form-control form-control-lg" type="text" name="full_name" id="inputName" placeholder="Иванов Иван Иванович">
+					<input class="form-control form-control-lg {% if form.full_name.errors %} is-invalid {% endif %}" type="text" name="full_name" id="inputName" placeholder="Иванов Иван Иванович">
+					{% if form.full_name.errors %}
+						<div class="invalid-feedback">
+							{% for error in form.full_name.errors %}
+								{{ error }}
+							{% endfor %}
+						</div>
+					{% endif %}
 				</div>
 				<div class="mb-3">
 					<label class="form-label" for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
-					<input class="form-control form-control-lg" type="email" name="email" id="inputEmail" placeholder="example@mail.com">
+					<input class="form-control form-control-lg {% if form.email.errors %} is-invalid {% endif %}" type="email" name="email" id="inputEmail" placeholder="example@mail.com">
+					{% if form.email.errors %}
+						<div class="invalid-feedback">
+							{% for error in form.email.errors %}
+								{{ error }}
+							{% endfor %}
+						</div>
+					{% endif %}
 				</div>
 				<div class="mb-3">
 					<label class="form-label" for="{{ form.answer.id_for_label }}">{{form.answer.label}}</label>
-					<textarea style="resize: none" rows="5" class="form-control form-control-lg" name="answer" id="inputAnswer" placeholder="Задайте свой вопрос здесь"></textarea>
+					<textarea style="resize: none" rows="5" class="form-control form-control-lg {% if form.answer.errors %} is-invalid {% endif %}" name="answer" id="inputAnswer" placeholder="Задайте свой вопрос здесь"></textarea>
+					{% if form.answer.errors %}
+						<div class="invalid-feedback">
+							{% for error in form.answer.errors %}
+								{{ error }}
+							{% endfor %}
+						</div>
+					{% endif %}
 				</div>
 				<button type="submit" class="btn btn-primary">Отправить</button>
 			</form>
 		</div>
 	</div>
+
+<script src="{% static 'js/script.js' %}"></script>
 </main>
 {% endblock content %}
