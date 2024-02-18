@@ -80,7 +80,7 @@ The website of the knowledge base on petroleum technologies with ```the main pag
 ### Feedback form
 ---
 <p align="center">
-    <img src="./readme_assets/3.png" alt="Feedback form screenshot" style="width: 70%;">
+    <img src="./readme_assets/form.gif" alt="Feedback form screenshot" style="width: 70%;">
 </p>
 
 > **The user, having filled in the full name, mail and question, sends a message to e-mail and telegram**
