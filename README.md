@@ -15,7 +15,7 @@
 
 ## Installation
 
-1. Clone this repository: ```https://github.com/gaziikk/oiltech_knowledge_hub.git ```
+1. Clone this repository: ```git clone https://github.com/gaziikk/oiltech_knowledge_hub.git ```
 2. Install ```virtualenv``` : ```python -m venv venv```
 3. Activate ```virtualenv``` : ```venv/scripts/activate```
 4. cd into ```oiltech_knowledge_hub```: ```cd oiltech_knowledge_hub```.
